@@ -41,7 +41,15 @@ pip install dist/smoltext-*.whl
 
 ### Enable tab completion:
 
-Either use `activate-global-python-argcomplete --user` for global argcomplete. Or add `eval "$(register-python-argcomplete smoltext)"` to your .bashrc
+Either use this for global argcomplete for all python scripts.
+
+```bash
+activate-global-python-argcomplete --user
+```
+
+Or you can add `eval "$(register-python-argcomplete smoltext)"` to your .bashrc to only allow smoltext to have argcomplete completion.
+
+More detailed instructions for argcomplete installation can be found [here](https://kislyuk.github.io/argcomplete/#global-completion).
 
 ## Current Features
 
