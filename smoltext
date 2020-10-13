@@ -23,7 +23,8 @@ fonts_shorthand = {
     'caps': 'smallcaps',
 }
 
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(
+    description="A font converter utility with the extra fonts included in utf8.")
 parser.add_argument('text', nargs='*',
                     help="text to process")
 parser.add_argument('-c', '--copy', action="store_true",
