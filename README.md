@@ -65,6 +65,7 @@ More detailed instructions for argcomplete installation can be found [here](http
 * Kerning can be off in the terminal due to monospaced font.
 * Certain fonts don't include all font styles used in this package.
 
-## Issues?
+## Links
 
-If you are having issues. Feel free to [open an issue](https://gitlab.com/imsofi/smoltext/-/issues).
+* [Gitlab](https://gitlab.com/imsofi/smoltext/)
+* [PyPI](https://pypi.org/project/smoltext/)
