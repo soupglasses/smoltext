@@ -47,4 +47,3 @@ if args.copy:
     pyperclip.copy(processed_text)
 else:
     print(processed_text)
-

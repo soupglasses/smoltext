@@ -6,4 +6,3 @@ from ._handwriting import handwriting
 from ._italic import italic
 from ._demonic import demonic
 from ._fancy import fancy
-
