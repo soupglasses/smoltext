@@ -4,20 +4,7 @@ import sys
 import argparse
 import argcomplete
 import pyperclip
-from tables import table_emoji, table_subscript, table_smallcaps, table_bold
-from tables import table_handwriting, table_italic, table_demonic, table_fancy
-
-fonts = {
-    'subscript': table_subscript,
-    'emoji': table_emoji,
-    'smallcaps': table_smallcaps,
-    'bold': table_bold,
-    'handwriting': table_handwriting,
-    'italic': table_italic,
-    'demonic': table_demonic,
-    'bold': table_bold,
-    'fancy': table_fancy,
-}
+from fonts import fonts
 
 parser = argparse.ArgumentParser(
     description="A font converter utility with the extra fonts included in utf8.")
