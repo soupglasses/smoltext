@@ -1,4 +1,4 @@
-table_smallcaps = str.maketrans({
+smallcaps = str.maketrans({
     'a': 'ᴀ',
     'b': 'ʙ',
     'c': 'ᴄ',

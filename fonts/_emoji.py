@@ -1,4 +1,4 @@
-table_emoji = str.maketrans({
+emoji = str.maketrans({
     'a': '🇦 ',
     'b': '🇧 ',
     'c': '🇨 ',

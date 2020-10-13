@@ -4,7 +4,19 @@ import sys
 import argparse
 import argcomplete
 import pyperclip
-from fonts import fonts
+import fonts
+
+fonts = {
+    'subscript': fonts.subscript,
+    'emoji': fonts.emoji,
+    'smallcaps': fonts.smallcaps,
+    'bold': fonts.bold,
+    'handwriting': fonts.handwriting,
+    'italic': fonts.italic,
+    'demonic': fonts.demonic,
+    'bold': fonts.bold,
+    'fancy': fonts.fancy,
+}
 
 parser = argparse.ArgumentParser(
     description="A font converter utility with the extra fonts included in utf8.")
@@ -35,3 +47,4 @@ if args.copy:
     pyperclip.copy(processed_text)
 else:
     print(processed_text)
+

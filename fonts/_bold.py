@@ -1,4 +1,4 @@
-table_bold = str.maketrans({
+bold = str.maketrans({
     'a': '𝗮',
     'b': '𝗯',
     'c': '𝗰',

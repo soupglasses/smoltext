@@ -1,4 +1,4 @@
-table_demonic = str.maketrans({
+demonic = str.maketrans({
     'a': '𝔞',
     'b': '𝔟',
     'c': '𝔠',
