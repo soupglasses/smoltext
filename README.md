@@ -4,6 +4,8 @@
 $ smoltext -h
 usage: smoltext [-h] [-c] [-f FONT] [--list-fonts] [text [text ...]]
 
+A font converter utility with the extra fonts included in utf8.
+
 positional arguments:
   text                  text to process
 
