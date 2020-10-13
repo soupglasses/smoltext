@@ -18,10 +18,6 @@ fonts = {
     'bold': table_bold,
     'fancy': table_fancy,
 }
-fonts_shorthand = {
-    'sub': 'subscript',
-    'caps': 'smallcaps',
-}
 
 parser = argparse.ArgumentParser(
     description="A font converter utility with the extra fonts included in utf8.")
@@ -40,17 +36,7 @@ if args.list_fonts:
     print("Fonts:",
           *[f"{font}: {font.translate(fonts[font])}" for font in fonts],
           sep='\n • ')
-    print("Shorthands:",
-          *[f"{short}: {long}" for short, long in fonts_shorthand.items()],
-          sep='\n • ')
     quit()
-
-if args.font in fonts_shorthand:
-    font = fonts[fonts_shorthand[args.font]]
-elif args.font in fonts:
-    font = fonts[args.font]
-else:
-    raise SystemExit(f'Error: {args.font!r} is not a valid font.')
 
 text = " ".join(args.text)
 if not text:
