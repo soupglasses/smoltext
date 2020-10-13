@@ -18,5 +18,3 @@ fonts = {
     'bold': table_bold,
     'fancy': table_fancy,
 }
-
-__all__ = ['fonts']
