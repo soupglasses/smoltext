@@ -32,9 +32,11 @@ argcomplete.autocomplete(parser)
 args = parser.parse_args()
 
 if args.list_fonts:
-    print("Fonts:",
-          *[f"{font}: {font.translate(fonts[font])}" for font in fonts],
-          sep='\n • ')
+    print(
+        "Fonts:",
+        *(f"{font.translate(fonts[font])} ({font})" for font in fonts),
+        sep='\n • '
+    )
     quit()
 
 text = " ".join(args.text)
