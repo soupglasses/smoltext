@@ -39,12 +39,17 @@ python setup.py bdist_wheel
 pip install dist/smoltext-*.whl
 ```
 
+### Enable tab completion:
+
+Either use `activate-global-python-argcomplete --user` for global argcomplete. Or add `eval "$(register-python-argcomplete smoltext)"` to your .bashrc
+
 ## Current Features
 
 * Processes text input and gives an output of the desired font.
 * List out all available fonts with previews.
 * Clipboard functionality for fast usage.
 * Easy to use CLI commands.
+* Tab completion.
 
 ## Common issues
 
