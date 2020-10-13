@@ -42,7 +42,7 @@ text = " ".join(args.text)
 if not text:
     text = input('> ')
 
-processed_text = text.translate(font)
+processed_text = text.translate(fonts[args.font])
 
 if args.copy:
     pyperclip.copy(processed_text)
