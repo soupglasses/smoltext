@@ -19,17 +19,16 @@ $ smoltext -f sub hello
 $ _
 ```
 
-A font converter utility for the extra fonts included in utf8.
+A font converter utility with the extra fonts included in utf8.
 
 ## Installation
 
-1. With pip:
-
+### With pip:
 ```bash
 pip install smoltext --user
 ```
 
-2. Manually:
+### Manually:
 
 ```bash
 git clone https://gitlab.com/imsofi/smoltext/
