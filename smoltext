@@ -1,6 +1,8 @@
 #!/usr/bin/env python
+# PYTHON_ARGCOMPLETE_OK
 import sys
 import argparse
+import argcomplete
 import pyperclip
 from tables import table_emoji, table_subscript, table_smallcaps, table_bold
 from tables import table_handwriting, table_italic, table_demonic, table_fancy
@@ -26,10 +28,11 @@ parser.add_argument('text', nargs='*',
                     help="text to process")
 parser.add_argument('-c', '--copy', action="store_true",
                     help="copies processed text to clipboard")
-parser.add_argument('-f', '--font', default='subscript',
+parser.add_argument('-f', '--font', default='subscript', choices=fonts, metavar='FONT',
                     help="which font to use")
 parser.add_argument('--list-fonts', action="store_true",
                     help="list all supported fonts")
+argcomplete.autocomplete(parser)
 args = parser.parse_args()
 
 if args.list_fonts:
