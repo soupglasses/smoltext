@@ -1,0 +1,65 @@
+#!/usr/bin/env python
+import sys
+import argparse
+from tables import table_emoji, table_subscript, table_smallcaps, table_bold
+from tables import table_handwriting, table_italic, table_demonic, table_fancy
+
+fonts = {
+    'subscript': table_subscript,
+    'emoji': table_emoji,
+    'smallcaps': table_smallcaps,
+    'bold': table_bold,
+    'handwriting': table_handwriting,
+    'italic': table_italic,
+    'demonic': table_demonic,
+    'bold': table_bold,
+    'fancy': table_fancy,
+}
+fonts_shorthand = {
+    'sub': 'subscript',
+    'caps': 'smallcaps',
+}
+
+parser = argparse.ArgumentParser()
+parser.add_argument('text', nargs='*',
+                    help="text to process")
+parser.add_argument('-c', '--copy', action="store_true",
+                    help="copies processed text to clipboard")
+parser.add_argument('-f', '--font', default='subscript',
+                    help="which font to use")
+parser.add_argument('--list-fonts', action="store_true",
+                    help="list all supported fonts")
+args = parser.parse_args()
+
+if args.list_fonts:
+    print("Fonts:",
+          *[f"{font}: {font.translate(fonts[font])}" for font in fonts],
+          sep='\n • ')
+    print("Shorthands:",
+          *[f"{short}: {long}" for short, long in fonts_shorthand.items()],
+          sep='\n • ')
+    quit()
+
+if args.font in fonts_shorthand:
+    font = fonts[fonts_shorthand[args.font]]
+elif args.font in fonts:
+    font = fonts[args.font]
+else:
+    raise SystemExit(f'Error: {args.font!r} is not a valid font.')
+
+text = " ".join(args.text)
+if not text:
+    text = input('> ')
+
+processed_text = text.translate(font)
+
+if args.copy:
+    try:
+        import pyperclip
+    except ImportError:
+        raise SystemExit("Pyperclip module not found, install it with " +
+                         "'pip install pyperclip --user'")
+    else:
+        pyperclip.copy(processed_text)
+else:
+    print(processed_text)
