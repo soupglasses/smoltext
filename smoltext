@@ -35,12 +35,13 @@ if args.list_fonts:
     print(
         "Fonts:",
         *(f"{font.translate(fonts[font])} ({font})" for font in fonts),
-        sep='\n • '
+        sep='\n • ',
     )
     quit()
 
-text = " ".join(args.text)
-if not text:
+if args.text:
+    text = " ".join(args.text)
+else:
     text = input('> ')
 
 processed_text = text.translate(fonts[args.font])
