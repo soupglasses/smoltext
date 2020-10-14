@@ -5,7 +5,7 @@ with open('README.md', 'r') as f:
 
 setuptools.setup(
     name='smoltext',
-    version='1.2.0',
+    version='1.2.1',
     scripts=['smoltext'],
     author='Sofi',
     description='A font converter utility with the extra fonts included in utf8.',
