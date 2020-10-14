@@ -16,7 +16,7 @@ optional arguments:
   --list-fonts          list all supported fonts
 $ smoltext -f italic hello
 𝘩𝘦𝘭𝘭𝘰
-$ smoltext -f sub hello
+$ smoltext -f subscript hello
 ʰᵉˡˡᵒ
 $ _
 ```
