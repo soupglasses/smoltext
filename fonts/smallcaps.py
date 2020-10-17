@@ -1,4 +1,4 @@
-smallcaps = str.maketrans({
+str.maketrans({
     'a': 'ᴀ',
     'b': 'ʙ',
     'c': 'ᴄ',

@@ -1,4 +1,4 @@
-fancy = str.maketrans({
+str.maketrans({
     'a': '𝕒',
     'b': '𝕓',
     'c': '𝕔',

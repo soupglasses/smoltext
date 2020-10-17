@@ -1,4 +1,4 @@
-subscript = str.maketrans({
+str.maketrans({
     'a': 'ᵃ',
     'b': 'ᵇ',
     'c': 'ᶜ',

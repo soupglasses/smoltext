@@ -1,4 +1,4 @@
-italic = str.maketrans({
+str.maketrans({
     'a': '𝘢',
     'b': '𝘣',
     'c': '𝘤',
