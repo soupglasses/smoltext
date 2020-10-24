@@ -4,18 +4,18 @@ import sys
 import argparse
 import argcomplete
 import pyperclip
-from fonts import subscript, emoji, smallcaps, bold, handwriting, italic, demonic, bold, fancy
+import fonts
 
 fonts = {
-    'subscript': subscript.table,
-    'emoji': emoji.table,
-    'smallcaps': smallcaps.table,
-    'bold': bold.table,
-    'handwriting': handwriting.table,
-    'italic': italic.table,
-    'demonic': demonic.table,
-    'bold': bold.table,
-    'fancy': fancy.table,
+    'subscript': fonts.subscript,
+    'emoji': fonts.emoji,
+    'smallcaps': fonts.smallcaps,
+    'bold': fonts.bold,
+    'handwriting': fonts.handwriting,
+    'italic': fonts.italic,
+    'demonic': fonts.demonic,
+    'bold': fonts.bold,
+    'fancy': fonts.fancy,
 }
 
 parser = argparse.ArgumentParser(

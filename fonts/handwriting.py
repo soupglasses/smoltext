@@ -1,4 +1,4 @@
-table = str.maketrans({
+handwriting = str.maketrans({
     'a': '𝒶',
     'b': '𝒷',
     'c': '𝒸',
