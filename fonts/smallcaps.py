@@ -1,4 +1,4 @@
-str.maketrans({
+table = str.maketrans({
     'a': 'ᴀ',
     'b': 'ʙ',
     'c': 'ᴄ',

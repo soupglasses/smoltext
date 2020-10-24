@@ -1,4 +1,4 @@
-str.maketrans({
+table = str.maketrans({
     'a': 'ᵃ',
     'b': 'ᵇ',
     'c': 'ᶜ',

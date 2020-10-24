@@ -1,4 +1,4 @@
-str.maketrans({
+table = str.maketrans({
     'a': '🇦 ',
     'b': '🇧 ',
     'c': '🇨 ',
