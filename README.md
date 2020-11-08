@@ -31,14 +31,13 @@ A font converter utility with the extra fonts included in utf8.
 pip install smoltext --user --upgrade
 ```
 
-### Manually:
+### With git:
 
 ```bash
 git clone https://gitlab.com/imsofi/smoltext/
 cd smoltext
 pip install --upgrade setuptools wheel
-python setup.py bdist_wheel
-pip install dist/smoltext-*.whl
+python setup.py install --user
 ```
 
 ### Enable tab completion:
