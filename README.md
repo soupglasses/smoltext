@@ -36,7 +36,7 @@ pip install smoltext --user --upgrade
 ```bash
 git clone https://gitlab.com/imsofi/smoltext/
 cd smoltext
-pip install --upgrade setuptools wheel
+pip install --upgrade setuptools
 python setup.py install --user
 ```
 
