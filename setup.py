@@ -3,9 +3,13 @@ import setuptools
 with open('README.md', 'r') as f:
     long_description = f.read()
 
+with open('requirements.txt') as f:
+    requirements = f.read().splitlines()
+
 setuptools.setup(
     name='smoltext',
-    version='1.4.2',
+    version='1.4.3',
+    install_requires=requirements,
     scripts=['smoltext'],
     author='Sofi',
     description='A font converter utility with the extra fonts included in utf8.',
