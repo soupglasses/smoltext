@@ -28,7 +28,7 @@ A font converter utility with the extra fonts included in utf8.
 ### With pip:
 
 ```bash
-pip install smoltext --user --upgrade
+pip install --upgrade --user smoltext
 ```
 
 ### With git:
