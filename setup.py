@@ -8,7 +8,7 @@ with open('requirements.txt') as f:
 
 setuptools.setup(
     name='smoltext',
-    version='1.4.4',
+    version='1.4.6',
     install_requires=requirements,
     scripts=['smoltext'],
     author='Sofi',
