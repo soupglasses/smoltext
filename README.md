@@ -51,7 +51,7 @@ You can use `xclip` or `wl-copy` to automatically copy the processed output to y
 
 Under xorg with `xclip`:
 ```bash
-smoltext Hello! | xclip
+smoltext Hello! | xclip -sel clip
 ```
 
 Under wayland with `wl-copy`:
