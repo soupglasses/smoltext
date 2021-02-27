@@ -35,9 +35,9 @@ pip3 install --upgrade --user smoltext
 
 ```bash
 git clone https://gitlab.com/imsofi/smoltext/ && cd smoltext
-python3 -m pip install --upgrade build
+pip3 install --upgrade build
 python3 -m build
-python3 -m pip install dist/smoltext-*.whl
+pip3 install dist/smoltext-*.whl
 ```
 
 ## Current Features
