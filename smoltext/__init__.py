@@ -1,0 +1,1 @@
+from .smoltext import main
