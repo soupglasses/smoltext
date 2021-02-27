@@ -28,16 +28,15 @@ A font converter utility with the extra fonts included in utf8.
 ### With pip:
 
 ```bash
-pip install --upgrade --user smoltext
+pip3 install --upgrade --user smoltext
 ```
 
 ### With git:
 
 ```bash
-git clone https://gitlab.com/imsofi/smoltext/
-cd smoltext
-pip install --upgrade setuptools
-python setup.py install --user
+git clone https://gitlab.com/imsofi/smoltext/ && cd smoltext
+pip3 install --upgrade setuptools
+python3 setup.py install --user
 ```
 
 ## Current Features
