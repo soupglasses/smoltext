@@ -6,6 +6,7 @@ from .handwriting import handwriting
 from .italic import italic
 from .demonic import demonic
 from .fancy import fancy
+from .monospace import monospace
 
 __all__ = [
     'subscript',
@@ -16,4 +17,5 @@ __all__ = [
     'italic',
     'demonic',
     'fancy',
+    'monospace',
 ]

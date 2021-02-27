@@ -16,6 +16,7 @@ fonts = {
     'demonic': fonts.demonic,
     'bold': fonts.bold,
     'fancy': fonts.fancy,
+    'monospace': fonts.monospace,
 }
 
 parser = argparse.ArgumentParser(
