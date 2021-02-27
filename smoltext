@@ -39,5 +39,4 @@ if args.text:
 else:
     text = input('> ')
 
-processed_text = text.translate(fonts[args.font])
-print(processed_text)
+print(text.translate(fonts[args.font]))
