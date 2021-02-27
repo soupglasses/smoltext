@@ -45,6 +45,20 @@ python3 setup.py install --user
 * List out all available fonts with previews.
 * Easy to use CLI commands.
 
+## Tips & Tricks
+
+You can use `xclip` or `wl-copy` to automatically copy the processed output to your clipboard.
+
+Under xorg with `xclip`:
+```bash
+smoltext Hello! | xclip
+```
+
+Under wayland with `wl-copy`:
+```bash
+smoltext Hello! | wl-copy
+```
+
 ## Common issues
 
 * Certain browsers and terminals fail to render certain font styles regardless of font.
