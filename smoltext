@@ -1,9 +1,5 @@
-#!/usr/bin/env python
-# PYTHON_ARGCOMPLETE_OK
-import sys
+#!/usr/bin/env python3
 import argparse
-import argcomplete
-import pyperclip
 import fonts
 
 fonts = {
@@ -19,8 +15,7 @@ fonts = {
     'monospace': fonts.monospace,
 }
 
-parser = argparse.ArgumentParser(
-    description="A font converter utility with the extra fonts included in utf8.")
+parser = argparse.ArgumentParser(description="A font converter utility with the extra fonts included in utf8.")
 parser.add_argument('text', nargs='*',
                     help="text to process")
 parser.add_argument('-c', '--copy', action="store_true",
@@ -29,7 +24,6 @@ parser.add_argument('-f', '--font', default='subscript', choices=fonts, metavar=
                     help="which font to use")
 parser.add_argument('--list-fonts', action="store_true",
                     help="list all supported fonts")
-argcomplete.autocomplete(parser)
 args = parser.parse_args()
 
 if args.list_fonts:
@@ -46,8 +40,4 @@ else:
     text = input('> ')
 
 processed_text = text.translate(fonts[args.font])
-
-if args.copy:
-    pyperclip.copy(processed_text)
-else:
-    print(processed_text)
+print(processed_text)
