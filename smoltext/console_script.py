@@ -50,7 +50,3 @@ def main():
         text = input('> ')
 
     print(text.translate(fonts[args.font]))
-
-
-if __name__ == '__main__':
-    main()
