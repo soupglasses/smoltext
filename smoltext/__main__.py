@@ -1,3 +1,4 @@
-from console_script import main
+from smoltext.console_script import main
 
-main()
+if __name__ == '__main__':
+    main()
