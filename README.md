@@ -1,5 +1,7 @@
 # Smoltext
 
+A font converter utility with the extra fonts included in utf8.
+
 ```
 $ smoltext -h
 usage: smoltext [-h] [-c] [-f FONT] [--list-fonts] [text [text ...]]
@@ -21,8 +23,6 @@ $ smoltext -f subscript hello
 $ _
 ```
 
-A font converter utility with the extra fonts included in utf8.
-
 ## Installation
 
 ### With pip:
@@ -34,7 +34,7 @@ pip3 install --upgrade --user smoltext
 ### With git:
 
 ```bash
-git clone https://gitlab.com/imsofi/smoltext/ && cd smoltext
+git clone https://git.sr.ht/~sofi/smoltext/ && cd smoltext
 pip3 install --upgrade build
 python3 -m build
 pip3 install dist/smoltext-*.whl
@@ -68,5 +68,5 @@ smoltext Hello! | wl-copy
 
 ## Links
 
-* [Gitlab](https://gitlab.com/imsofi/smoltext/)
+* [Git](https://git.sr.ht/~sofi/smoltext/)
 * [PyPI](https://pypi.org/project/smoltext/)
